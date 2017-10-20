@@ -1,0 +1,4 @@
+---
+shutdown_command: /sbin/shutdown
+shutdown_command_option: "{% if shutdown_cancel %}-c{% elif shutdown_reboot %}-r{% elif shutdown_halt %}-H{% else %}-h{% endif %}"
+shutdown_command_time: "{% if shutdown_time | length > 0 %}{{ shutdown_time }}{% elif shutdown_timeout > 0 %}+{{ shutdown_timeout }}{% else %}now{% endif %}"
