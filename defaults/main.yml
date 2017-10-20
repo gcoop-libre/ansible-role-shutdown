@@ -1,0 +1,8 @@
+---
+shutdown_cancel: False
+shutdown_reboot: False
+shutdown_halt: False
+
+shutdown_timeout: 0
+shutdown_time: ''
+shutdown_message: ''
