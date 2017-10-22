@@ -1,6 +1,6 @@
 ---
 - name: Shutdown host
-  shell: "{{ shutdown_command }} {{ shutdown_command_option }} {{ shutdown_command_time }} {{ shutdown_message }}"
+  shell: "{{ shutdown_command }} {{ shutdown_command_option }} {{ shutdown_command_time }} {{ shutdown_message }} &"
   async: 1
   poll: 0
   ignore_errors: True
